@@ -1,7 +1,12 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { nameToArray } from "../helpers";
 
 class Flames extends React.Component {
+  static propTypes = {
+    getLoveScore: PropTypes.func
+  };
+
   matchInput = e => {
     e.preventDefault();
     let personOne =
@@ -31,35 +36,15 @@ class Flames extends React.Component {
           <p>
             <strong>Enter the name of person below:</strong>
           </p>
-          <input
-            type="text"
-            name="name"
-            ref="name_one"
-            placeholder="First Name"
-          />
-          <input
-            type="text"
-            name="lastName"
-            ref="last_name_one"
-            placeholder="Last Name"
-          />
+          <input type="text" name="name" placeholder="First Name" />
+          <input type="text" name="lastName" placeholder="Last Name" />
         </div>
         <div>
           <p>
             <strong>Enter the name of person below:</strong>
           </p>
-          <input
-            type="text"
-            name="name_two"
-            ref="name_two"
-            placeholder="First Name"
-          />
-          <input
-            type="text"
-            name="last_name_two"
-            ref="last_name_two"
-            placeholder="Last Name"
-          />
+          <input type="text" name="name_two" placeholder="First Name" />
+          <input type="text" name="last_name_two" placeholder="Last Name" />
         </div>
         <button>Match!</button>
       </form>

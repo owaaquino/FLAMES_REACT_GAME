@@ -12,8 +12,44 @@ export function flames(n) {
   for (let i = 0; i < n; i++) {
     match = flames[i];
   }
+  return match;
+}
 
-  console.log(match);
+export function rando(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+export function getResult(n) {
+  const posibleAnswer = [
+    "friend",
+    "friendzoned",
+    'flirting',
+    'fling',
+    'feeling',
+    "frenimies",
+    "lover",
+    "landian lang",
+    "luluha",
+    "angry",
+    "adorable",
+    "asawa",
+    "asuwang",
+    "marriage",
+    "may kabit",
+    "may kahati",
+    "maybe",
+    "mabubuntis at iiwan",
+    "enemy",
+    "engage",
+    "sweet",
+    "sumpaan",
+    "suntukan",
+    "sabaw"
+  ];
+
+  let filteredResult = posibleAnswer.filter(result => result[0] === n);
+
+  return rando(filteredResult);
 }
 
 // export function countNames(list) {
