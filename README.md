@@ -23,7 +23,7 @@ A match making game 90s kids use to match him/her with his/her crush. But this t
 
 **Live links:**
 
-- Hosted with Netlify -
+- Hosted with Netlify - [https://flames.netlify.com/](https://flames.netlify.com/)
 
 # Notes
 

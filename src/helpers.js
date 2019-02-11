@@ -27,21 +27,15 @@ export function getResult(n) {
     "friend 😐",
     "friendzoned 💔",
     "flirting 👫",
-    "fling ne👫",
     "frenimies 🤼‍♀️",
     "lover 💑",
-    "luluha 😭",
     "angry 😡",
     "adorable 😍",
-    "asuwang 👹",
     "marriage 💒",
-    "may kabit 🤦‍♂️",
-    "may kahati 😒",
     "maybe 💁‍♀️",
     "enemy 🔫",
     "engage 💍",
-    "sweet 🍬",
-    "suntukan 👊"
+    "sweet 🍬"
   ];
 
   let filteredResult = posibleAnswer.filter(result => result[0] === n);
