@@ -27,7 +27,7 @@ export function getResult(n) {
     "friend 😐",
     "friendzoned 💔",
     "flirting 👫",
-    "fling 👫",
+    "fling ne👫",
     "frenimies 🤼‍♀️",
     "lover 💑",
     "luluha 😭",
