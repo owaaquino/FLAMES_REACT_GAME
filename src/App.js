@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import Title from "./components/Title";
 import Flames from "./components/Flames";
 import Form from "./components/Form";
+import "./App.css";
 
 class App extends Component {
   state = {
-    loveScore: 0
+    loveScore: undefined
   };
 
   getLoveScore = score => {

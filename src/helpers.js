@@ -9,6 +9,9 @@ export function nameToArray(name) {
 export function flames(n) {
   let flames = ["f", "l", "a", "m", "e", "s"];
   let match = "";
+  if (n === 0) {
+    match = "f";
+  }
   for (let i = 0; i < n; i++) {
     match = flames[i];
   }
@@ -21,30 +24,24 @@ export function rando(arr) {
 
 export function getResult(n) {
   const posibleAnswer = [
-    "friend",
-    "friendzoned",
-    'flirting',
-    'fling',
-    'feeling',
-    "frenimies",
-    "lover",
-    "landian lang",
-    "luluha",
-    "angry",
-    "adorable",
-    "asawa",
-    "asuwang",
-    "marriage",
-    "may kabit",
-    "may kahati",
-    "maybe",
-    "mabubuntis at iiwan",
-    "enemy",
-    "engage",
-    "sweet",
-    "sumpaan",
-    "suntukan",
-    "sabaw"
+    "friend 😐",
+    "friendzoned 💔",
+    "flirting 👫",
+    "fling 👫",
+    "frenimies 🤼‍♀️",
+    "lover 💑",
+    "luluha 😭",
+    "angry 😡",
+    "adorable 😍",
+    "asuwang 👹",
+    "marriage 💒",
+    "may kabit 🤦‍♂️",
+    "may kahati 😒",
+    "maybe 💁‍♀️",
+    "enemy 🔫",
+    "engage 💍",
+    "sweet 🍬",
+    "suntukan 👊"
   ];
 
   let filteredResult = posibleAnswer.filter(result => result[0] === n);
